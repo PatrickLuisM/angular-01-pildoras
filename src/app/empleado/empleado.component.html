@@ -1,0 +1,19 @@
+<div>
+
+  <p>Nombre: {{nombre}} </p>
+  <p>Apellido: {{apellido}} </p>
+  <p>Edad: {{edad}} </p>
+  <p>Empresa: {{empresa}} </p>
+
+  <!-- <input type="text" #empresa (keyup)="0" [disabled]="habilitarInput"> -->
+  Ingrese empresa: <input type="text" [(ngModel)]="empresa">
+</div>
+
+<br>
+{{textoRegistro}}
+<br>
+Registrado: <input type="radio"  value="si" id="registrado" [checked]="check" (click)="setUsuarioRegistrado($event)" name="registro">
+<br>
+No registrado:<input type="radio" value="no" id="registrado" name="registro" (click)="setUsuarioRegistrado($event)">
+
+<!-- {{getInput()} -->
